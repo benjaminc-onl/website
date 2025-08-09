@@ -19,7 +19,7 @@ function createConcertLink(concert, index, today) {
     const concertLink = document.createElement('a');
     concertLink.href = concert.url;
     concertLink.target = '_blank';
-    concertLink.className = 'concert-link';
+    concertLink.className = 'page-link';
     concertLink.textContent = `${concert.venue} - ${concert.location} - ${concert.date}`;
     
     // Check if concert date has passed
@@ -47,7 +47,7 @@ async function loadConcerts() {
         
         // Create container for all concerts
         const concertContainer = document.createElement('div');
-        concertContainer.className = 'concert-container';
+        concertContainer.className = 'page-container reverse';
         
         // Create concert links (limit to 14 concerts)
         concerts.slice(0, 14).forEach((concert, index) => {
