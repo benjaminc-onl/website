@@ -9,7 +9,7 @@ function createNavigation() {
     // Define navigation items
     const navItems = [
         { href: '/index.html', text: 'About' },
-        { href: '/assets/cv.pdf', text: 'Portfolio', target: '_blank' },
+        { href: '/portfolio.html', text: 'Portfolio' },
         { href: '/contact.html', text: 'Contact' },
         { href: '/concerts.html', text: 'Concerts' }
     ];

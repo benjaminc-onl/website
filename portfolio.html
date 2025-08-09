@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/navigation.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20vh 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .portfolio-link {
+            text-decoration: none;
+            color: #333;
+            white-space: nowrap;
+            display: block;
+            transition: color 0.2s ease;
+        }
+
+        .portfolio-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body id="portfolio-list">
+    <div class="portfolio-container">
+        <a href="/assets/cv.pdf" class="portfolio-link" target="_blank">CV/Resume - cv.pdf</a>
+        <a href="https://github.com/bncummings" class="portfolio-link" target="_blank">GitHub Portfolio - github.com/bncummings</a>
+        <!-- Add more portfolio items here -->
+    </div>
+
+    <script src="assets/navigation.js"></script>
+    <script>
+        // Fade in the page content
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
