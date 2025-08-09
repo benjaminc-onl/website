@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>contact</title>
-<link rel="stylesheet" href="assets/navigation.css">
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/navigation.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20vh 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-.container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
+        .contact-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-.image {
-    max-width: 400px;
-    height: auto;
-}
+        .contact-link {
+            text-decoration: none;
+            color: #333;
+            white-space: nowrap;
+            display: block;
+            transition: color 0.2s ease;
+        }
 
-.contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
-}
-</style>
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
-<div class="container">
-    <img src="https://preview.redd.it/what-program-ai-is-this-v0-ti23xagrdu6d1.jpeg?auto=webp&s=5a642b12ce3fcd353f7839c011afc0f5727d5369" alt="Contact Image" class="image">
-    
-    <div class="contact-links">
-        <a href="mailto:cummingsben097@gmail.com"><i>email</i></a>
-        <a href="https://www.linkedin.com/in/ben-cummings-b3b0b2252/"><i>linkedin</i></a>
-        <a href="https://www.github.com/BnjmnCummings"><i>github</i></a>
+<body id="contact-list">
+    <div class="contact-container">
+        <a href="mailto:cummingsben097@gmail.com" class="contact-link">Personal Email: cummingsben097@gmail.com</a>
+        <a href="https://www.linkedin.com/in/ben-cummings-b3b0b2252/" class="contact-link">Linkedin: www.linkedin.com/in/ben-cummings-b3b0b2252</a>
+        <a href="https://www.github.com/bncummings" class="contact-link">Github: www.github.com/bncummings</a>
     </div>
-</div>
 
-<script src="assets/navigation.js"></script>
+    <script src="assets/navigation.js"></script>
+    <script>
+        // Fade in the page content
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
 </body>
 </html>
