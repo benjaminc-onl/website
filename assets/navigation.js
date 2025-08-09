@@ -26,7 +26,7 @@ function createNavigation() {
         navLinks.appendChild(link);
         
         // Add separator (except for last item)
-        if (index < navItems.length - 1) {
+        if (index < navItems.length) {
             navLinks.appendChild(document.createTextNode(' // '));
         }
     });
