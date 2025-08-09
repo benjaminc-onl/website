@@ -1,0 +1,127 @@
+[
+  {
+    "venue": "LSE Shaw Library",
+    "date": "25/06/2025",
+    "url": "https://www.lse.ac.uk/events/concert1"
+  },
+  {
+    "venue": "The Blue Note",
+    "date": "15/03/2025",
+    "url": "https://www.bluenote.net/newyork/event/concert"
+  },
+  {
+    "venue": "Jazz Café",
+    "date": "22/04/2025",
+    "url": "https://www.thejazzcafelondon.com/events/concert"
+  },
+  {
+    "venue": "Preservation Hall",
+    "date": "08/05/2025",
+    "url": "https://www.preservationhall.com/hall/events"
+  },
+  {
+    "venue": "Ronnie Scott's",
+    "date": "12/06/2025",
+    "url": "https://www.ronniescotts.co.uk/performances"
+  },
+  {
+    "venue": "Village Vanguard",
+    "date": "19/07/2025",
+    "url": "https://www.villagevanguard.com/calendar"
+  },
+  {
+    "venue": "Montreux Jazz Festival",
+    "date": "25/08/2025",
+    "url": "https://www.montreuxjazzfestival.com/en/program"
+  },
+  {
+    "venue": "Hollywood Bowl",
+    "date": "14/09/2025",
+    "url": "https://www.hollywoodbowl.com/events"
+  },
+  {
+    "venue": "Sydney Opera House",
+    "date": "30/10/2025",
+    "url": "https://www.sydneyoperahouse.com/events"
+  },
+  {
+    "venue": "Royal Albert Hall",
+    "date": "15/11/2025",
+    "url": "https://www.royalalberthall.com/tickets"
+  },
+  {
+    "venue": "Carnegie Hall",
+    "date": "20/12/2025",
+    "url": "https://www.carnegiehall.org/calendar"
+  },
+  {
+    "venue": "Lincoln Center",
+    "date": "05/01/2026",
+    "url": "https://www.lincolncenter.org/event"
+  },
+  {
+    "venue": "Barbican Centre",
+    "date": "18/01/2026",
+    "url": "https://www.barbican.org.uk/whats-on"
+  },
+  {
+    "venue": "Kennedy Center",
+    "date": "02/02/2026",
+    "url": "https://www.kennedy-center.org/calendar"
+  },
+  {
+    "venue": "Royal Festival Hall",
+    "date": "16/02/2026",
+    "url": "https://www.southbankcentre.co.uk/whats-on"
+  },
+  {
+    "venue": "Blue Note Tokyo",
+    "date": "01/03/2026",
+    "url": "https://www.bluenote.co.jp/en/events"
+  },
+  {
+    "venue": "Concertgebouw",
+    "date": "15/03/2026",
+    "url": "https://www.concertgebouw.nl/en/concerts"
+  },
+  {
+    "venue": "Berlin Philharmonie",
+    "date": "29/03/2026",
+    "url": "https://www.berliner-philharmoniker.de/en/concerts"
+  },
+  {
+    "venue": "La Scala",
+    "date": "12/04/2026",
+    "url": "https://www.teatroallascala.org/en/season"
+  },
+  {
+    "venue": "Vienna State Opera",
+    "date": "26/04/2026",
+    "url": "https://www.wiener-staatsoper.at/en/performances"
+  },
+  {
+    "venue": "Maison Symphonique",
+    "date": "10/05/2026",
+    "url": "https://www.placedesarts.com/en/event"
+  },
+  {
+    "venue": "Sage Gateshead",
+    "date": "24/05/2026",
+    "url": "https://sagegateshead.com/whats-on"
+  },
+  {
+    "venue": "Walt Disney Concert Hall",
+    "date": "07/06/2026",
+    "url": "https://www.laphil.com/events"
+  },
+  {
+    "venue": "Musikverein",
+    "date": "21/06/2026",
+    "url": "https://www.musikverein.at/en/concert-calendar"
+  },
+  {
+    "venue": "Elbphilharmonie",
+    "date": "05/07/2026",
+    "url": "https://www.elbphilharmonie.de/en/whats-on"
+  }
+]

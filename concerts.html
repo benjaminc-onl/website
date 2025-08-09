@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>concerts</title>
+<style>
+body {
+    margin: 0;
+    padding: 50vh 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body id="concerts-list">
+
+<script>
+async function loadConcerts() {
+    try {
+        const response = await fetch('assets/concerts.json');
+        const concerts = await response.json();
+        const body = document.body;
+        
+        concerts.forEach((concert, index) => {
+            const concertLink = document.createElement('a');
+            concertLink.href = concert.url;
+            concertLink.target = '_blank';
+            concertLink.textContent = `${concert.venue} - ${concert.date}`;
+            
+            if (index === 0) {
+                concertLink.id = 'most-recent-concert';
+            }
+            
+            body.appendChild(concertLink);
+        });
+        
+        setTimeout(() => {
+            const mostRecentConcert = document.getElementById('most-recent-concert');
+            if (mostRecentConcert) {
+                mostRecentConcert.scrollIntoView({
+                    behavior: 'auto',
+                    block: 'center'
+                });
+                
+                body.style.opacity = '1';
+            }
+        }, 50);
+        
+    } catch (error) {
+        console.error('Error loading concerts:', error);
+        document.body.innerHTML = '<div>Unable to load concert data</div>';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadConcerts);
+</script>
+
+</body>
+</html>
