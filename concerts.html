@@ -1,75 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>concerts</title>
-<style>
-body {
-    margin: 0;
-    padding: 50vh 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 15px;
-    align-items: center;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concerts</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20vh 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-a {
-    text-decoration: none;
-    color: #333;
-    white-space: nowrap;
-    display: block;
-}
+        .concert-container {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
-</style>
+        .concert-link {
+            text-decoration: none;
+            color: #333;
+            white-space: nowrap;
+            display: block;
+            transition: color 0.2s ease;
+        }
+
+        .concert-link:hover {
+            text-decoration: underline;
+        }
+
+        .concert-link.past-concert {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .concert-link.past-concert:hover {
+            color: #666;
+        }
+    </style>
 </head>
 
 <body id="concerts-list">
+    <script>
+        /**
+         * Parse a date string in DD/MM/YYYY format and return a Date object
+         * @param {string} dateString - Date in DD/MM/YYYY format
+         * @returns {Date} Parsed date object
+         */
+        function parseDate(dateString) {
+            const [day, month, year] = dateString.split('/');
+            return new Date(year, month - 1, day); // Month is 0-indexed
+        }
 
-<script>
-async function loadConcerts() {
-    try {
-        const response = await fetch('assets/concerts.json');
-        const concerts = await response.json();
-        const body = document.body;
-        
-        concerts.forEach((concert, index) => {
+        /**
+         * Create a concert link element with appropriate styling
+         * @param {Object} concert - Concert data object
+         * @param {number} index - Index of the concert in the list
+         * @param {Date} today - Current date for comparison
+         * @returns {HTMLElement} Concert link element
+         */
+        function createConcertLink(concert, index, today) {
             const concertLink = document.createElement('a');
             concertLink.href = concert.url;
             concertLink.target = '_blank';
-            concertLink.textContent = `${concert.venue} - ${concert.date}`;
+            concertLink.className = 'concert-link';
+            concertLink.textContent = `${concert.venue} - ${concert.location} - ${concert.date}`;
             
+            // Check if concert date has passed
+            const concertDate = parseDate(concert.date);
+            if (concertDate < today) {
+                concertLink.classList.add('past-concert');
+            }
+            
+            // Mark the most recent concert for scrolling
             if (index === 0) {
                 concertLink.id = 'most-recent-concert';
             }
             
-            body.appendChild(concertLink);
-        });
-        
-        setTimeout(() => {
-            const mostRecentConcert = document.getElementById('most-recent-concert');
-            if (mostRecentConcert) {
-                mostRecentConcert.scrollIntoView({
-                    behavior: 'auto',
-                    block: 'center'
+            return concertLink;
+        }
+
+        /**
+         * Load and display concerts from the JSON file
+         */
+        async function loadConcerts() {
+            try {
+                const response = await fetch('assets/concerts.json');
+                const concerts = await response.json();
+                const today = new Date();
+                
+                // Create container for all concerts
+                const concertContainer = document.createElement('div');
+                concertContainer.className = 'concert-container';
+                
+                // Create concert links (limit to 14 concerts)
+                concerts.slice(0, 14).forEach((concert, index) => {
+                    const concertLink = createConcertLink(concert, index, today);
+                    concertContainer.appendChild(concertLink);
                 });
                 
-                body.style.opacity = '1';
+                document.body.appendChild(concertContainer);
+                
+                // Scroll to most recent concert and fade in
+                setTimeout(() => {
+                    const mostRecentConcert = document.getElementById('most-recent-concert');
+                    if (mostRecentConcert) {
+                        mostRecentConcert.scrollIntoView({
+                            behavior: 'auto',
+                            block: 'center'
+                        });
+                    }
+                    document.body.style.opacity = '1';
+                }, 50);
+                
+            } catch (error) {
+                console.error('Error loading concerts:', error);
+                document.body.innerHTML = '<div class="error">Unable to load concert data</div>';
             }
-        }, 50);
-        
-    } catch (error) {
-        console.error('Error loading concerts:', error);
-        document.body.innerHTML = '<div>Unable to load concert data</div>';
-    }
-}
+        }
 
-document.addEventListener('DOMContentLoaded', loadConcerts);
-</script>
-
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', loadConcerts);
+    </script>
 </body>
 </html>
