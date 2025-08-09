@@ -1,0 +1,23 @@
+.about-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.time-inline {
+    font-size: 0.4em;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.time-inline a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about-text {
+    line-height: 1.6;
+    margin-top: 20px;
+}
