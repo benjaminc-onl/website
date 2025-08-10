@@ -9,30 +9,7 @@
     gap: 2px;
 }
 
-#portfolio-list .portfolio-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-}
-
-#portfolio-list .portfolio-link .label {
-    flex-shrink: 0;
-}
-
-#portfolio-list .portfolio-link .dots {
-    flex-grow: 1;
-    border-bottom: 1px dotted #ccc;
-    margin: 0 10px;
-    height: 1px;
-}
-
-#portfolio-list .portfolio-link .value {
-    color: #999;
-    font-weight: normal;
-    flex-shrink: 0;
-}
-
+/* Portfolio-specific overrides for dotted-link styles */
 #portfolio-list .portfolio-link:hover .value {
     color: #000;
     text-decoration: underline;
