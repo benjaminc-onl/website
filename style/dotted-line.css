@@ -1,6 +1,4 @@
-/* Shared dotted line styles for contact and portfolio pages */
-
-/* Base dotted line link structure */
+/* Dotted line seperating a title to a link/date */
 .dotted-link {
     display: flex;
     align-items: center;

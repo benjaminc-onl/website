@@ -1,5 +1,3 @@
-/* Common styles for portfolio, contact, and concerts pages */
-
 body {
     margin: 0;
     padding: 20vh 20px;
@@ -11,7 +9,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Common container styles */
 .page-container {
     max-width: 600px;
     width: 100%;
@@ -21,12 +18,10 @@ body {
     gap: 15px;
 }
 
-/* For concerts page - reverse order */
 .page-container.reverse {
     flex-direction: column-reverse;
 }
 
-/* Common link styles */
 .page-link {
     text-decoration: none;
     margin-bottom: 0;
@@ -41,7 +36,6 @@ body {
     text-decoration: underline;
 }
 
-/* Special styles for past concerts */
 .page-link.past-concert {
     color: #999;
     text-decoration: line-through;

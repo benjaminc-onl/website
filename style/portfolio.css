@@ -1,4 +1,3 @@
-/* Portfolio page specific styles */
 #portfolio-list .page-container {
     gap: 15px;
 }
@@ -9,7 +8,6 @@
     gap: 2px;
 }
 
-/* Portfolio-specific overrides for dotted-link styles */
 #portfolio-list .portfolio-link:hover .value {
     color: #000;
     text-decoration: underline;
