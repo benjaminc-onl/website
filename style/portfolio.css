@@ -1,0 +1,52 @@
+/* Portfolio page specific styles */
+#portfolio-list .page-container {
+    gap: 15px;
+}
+
+#portfolio-list .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#portfolio-list .portfolio-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+#portfolio-list .portfolio-link .label {
+    flex-shrink: 0;
+}
+
+#portfolio-list .portfolio-link .dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 10px;
+    height: 1px;
+}
+
+#portfolio-list .portfolio-link .value {
+    color: #999;
+    font-weight: normal;
+    flex-shrink: 0;
+}
+
+#portfolio-list .portfolio-link:hover .value {
+    color: #000;
+    text-decoration: underline;
+}
+
+#portfolio-list .portfolio-description {
+    color: #777;
+    font-size: 0.9em;
+    margin-left: 0;
+    line-height: 1.4;
+}
+
+#portfolio-list .dashes {
+    border-bottom: 1px dashed #eee;
+    width: 100%;
+    margin: 10px 0;
+}
