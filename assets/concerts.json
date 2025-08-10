@@ -13,68 +13,74 @@
   },
   {
     "venue": "LSE Shaw Library",
-    "location": "London",
+    "location": "London, UK",
     "url": "https://www.lse.ac.uk/library",
     "date": "25/06/2025"
   },
   {
-    "venue": "The Blue Note",
-    "location": "New York, NY",
-    "url": "https://www.bluenote.net/newyork/",
-    "date": "15/03/2025"
-  },
-  {
-    "venue": "Jazz Café",
+    "venue": "Holy Trinity South Kensington",
     "location": "London, UK",
-    "url": "https://www.thejazzcafelondon.com/",
-    "date": "22/04/2025"
+    "url": "https://www.instagram.com/p/DKZYT4Nt210/",
+    "date": "17/06/2025"
   },
   {
-    "venue": "Preservation Hall",
-    "location": "New Orleans, LA",
-    "url": "https://www.preservationhall.com/",
-    "date": "08/05/2025"
-  },
-  {
-    "venue": "Ronnie Scott's",
+    "venue": "Holy Trinity Sloane Square",
     "location": "London, UK",
-    "url": "https://www.ronniescotts.co.uk/",
-    "date": "12/06/2025"
+    "url": "https://icso.uk/?page_id=35",
+    "date": "07/06/2025"
   },
   {
-    "venue": "Village Vanguard",
-    "location": "New York, NY",
-    "url": "https://www.villagevanguard.com/",
-    "date": "19/07/2025"
-  },
-  {
-    "venue": "Montreux Jazz Festival",
-    "location": "Montreux, Switzerland",
-    "url": "https://www.montreuxjazzfestival.com/",
-    "date": "25/08/2025"
-  },
-  {
-    "venue": "Hollywood Bowl",
-    "location": "Los Angeles, CA",
-    "url": "https://www.hollywoodbowl.com/",
-    "date": "14/09/2025"
-  },
-  {
-    "venue": "Sydney Opera House",
-    "location": "Sydney, Australia",
-    "url": "https://www.sydneyoperahouse.com/",
-    "date": "30/10/2025"
-  },
-  {
-    "venue": "Royal Albert Hall",
+    "venue": "National Liberal Club",
     "location": "London, UK",
-    "url": "https://www.royalalberthall.com/",
-    "date": "15/11/2025"
+    "url": "https://members.nlc.org.uk/web/pages/events-reservation?eventId=1335",
+    "date": "03/06/2025"
   },
   {
-    "venue": "Carnegie Hall",
-    "location": "New York, NY",
-    "url": "https://www.carnegiehall.org/",
-    "date": "20/12/2025"
+    "venue": "Cadogan Hall",
+    "location": "London, UK",
+    "url": "https://cadoganhall.com/whats-on/imperial-college-symphony-orchestra-rachmaninov-and-prokofiev/",
+    "date": "1/03/2025"
+  },
+  {
+    "venue": "Imperial College London",
+    "location": "London, UK",
+    "url": "https://icso.uk/?page_id=35",
+    "date": "23/11/2024"
+  },
+  {
+    "venue": "Cadogan Hall",
+    "location": "London, UK",
+    "url": "https://cadoganhall.com/whats-on/odyssey-festival-orchestra-no-one-understood-me/",
+    "date": "17/09/2024"
+  },
+  {
+    "venue": "Hampstead Garden Suburb Free Church",
+    "location": "London, UK",
+    "url": "https://www.youtube.com/watch?v=_s4QMmx9jfE&ab_channel=DaisyRichards",
+    "date": "02/08/2024"
+  },
+    {
+    "venue": "Ognisko Poloski",
+    "location": "London, UK",
+    "url": "https://www.facebook.com/OgniskoPolskieUK/photos/20324-imperial-college-chamber-music-society-presentmusical-talents-from-imperia/942769211162079/",
+    "date": "20/03/2024"
+  },
+  {
+    "venue": "Royal Academy of Music",
+    "location": "London, UK",
+    "url": "https://www.youtube.com/watch?v=iAgafvBSubk&ab_channel=BenCummings",
+    "date": "14/02/2024"
+  },
+  {
+    "venue": "Royal Albert Hall, BBC Proms",
+    "location": "London, UK",
+    "url": "https://www.bbc.co.uk/events/emzd2m",
+    "date": "05/08/2023"
+  },
+  {
+    "venue": "Royal Albert Hall, BBC Proms",
+    "location": "London, UK",
+    "url": "https://www.bbc.co.uk/events/ej8wxj",
+    "date": "06/08/2022"
   }
 ]
