@@ -6,13 +6,60 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style/navigation.css">
     <link rel="stylesheet" href="style/page.css">
+    <style>
+        /* Contact page specific styles */
+        #contact-list .page-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        #contact-list .page-link .label {
+            flex-shrink: 0;
+        }
+
+        #contact-list .page-link .dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #ccc;
+            margin: 0 10px;
+            height: 1px;
+        }
+
+        #contact-list .page-link .value {
+            color: #999;
+            font-weight: normal;
+            flex-shrink: 0;
+        }
+
+        #contact-list .page-link:hover .value {
+            color: #666;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body id="contact-list">
     <div class="page-container">
-        <a href="mailto:cummingsben097@gmail.com" class="page-link">Personal Email: cummingsben097@gmail.com</a>
-        <a href="https://www.linkedin.com/in/ben-cummings-b3b0b2252/" class="page-link">Linkedin: www.linkedin.com/in/ben-cummings-b3b0b2252</a>
-        <a href="https://www.github.com/bncummings" class="page-link">Github: www.github.com/bncummings</a>
+        <a href="mailto:cummingsben097@gmail.com" class="page-link">
+            <span class="label">Personal Email:</span>
+            <span class="dots"></span>
+            <span class="value">cummingsben097@gmail.com</span>
+        </a>
+        <a href="mailto:benjamin.cummings23@imperial.ac.uk" class="page-link">
+            <span class="label">Work Email:</span>
+            <span class="dots"></span>
+            <span class="value">benjamin.cummings23@imperial.ac.uk</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ben-cummings-b3b0b2252/" class="page-link">
+            <span class="label">Linkedin:</span>
+            <span class="dots"></span>
+            <span class="value">www.linkedin.com/in/ben-cummings-b3b0b2252</span>
+        </a>
+        <a href="https://www.github.com/bncummings" class="page-link">
+            <span class="label">Github:</span>
+            <span class="dots"></span>
+            <span class="value">www.github.com/bncummings</span>
+        </a>
     </div>
 
     <script src="assets/navigation.js"></script>
